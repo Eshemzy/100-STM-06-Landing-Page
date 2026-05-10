@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --pry-clr: #3b2a1e;
+  --sec-clr: #faf6ef;
+  --tet-clr: #e5a628;
+
+  --pry-txt-clr: #4a3526;
+  --pry-txt-dark-fade: #4a3526cc;
+  --sec-txt-clr: #faf6ef;
+  --sec-txt-clr-fade: #faf6efcc;
+  --tet-txt-clr: #f4c04e;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 2.5rem;
+  --space-6: 3rem;
+
+  --fs-1: 0.875rem;
+  --fs-2: 1rem;
+  --fs-3: 1.25rem;
+  --fs-4: 1.5rem;
+  --fs-5: 2rem;
+  --fs-6: 2.5rem;
+}
+body,
+html {
+  line-height: 1.6;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fraunces", serif;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+p, span, button, a {
+  font-family: "Inter", sans-serif;
+}
