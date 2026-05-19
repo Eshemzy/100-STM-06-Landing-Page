@@ -17,6 +17,20 @@
   --sec-txt-clr-fade: #faf6efcc;
   --tet-txt-clr: #f4c04e;
 
+  /* --primary: #D8A27A;
+  --secondary: #4F6E77;
+  --accent: #A86543;
+  --dark: #5A3426;
+  --background: #E8EFF1;
+  --surface: #F5EEE8;
+  --neutral: #8B6F61;
+
+  --text-heading: #3B241A;
+  --text-subheading: #5A3426;
+  --text-body: #6B564C;
+  --text-muted: #8B6F61;
+  --text-light: #F5EEE8; */
+
   --space-1: 0.5rem;
   --space-2: 1rem;
   --space-3: 1.5rem;
@@ -36,6 +50,7 @@ html {
   line-height: 1.6;
   font-optical-sizing: auto;
   font-style: normal;
+  background: var(--sec-clr);
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Fraunces", serif;
@@ -45,4 +60,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 p, span, button, a {
   font-family: "Inter", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+
+.italic-accent {
+  font-family: inherit;
+  font-style: italic;
 }
