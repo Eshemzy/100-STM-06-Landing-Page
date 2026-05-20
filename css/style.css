@@ -47,6 +47,8 @@
 }
 body,
 html {
+  background-color: var(--sec-clr);
+  color: var(--pry-txt-clr);
   line-height: 1.6;
   font-optical-sizing: auto;
   font-style: normal;
@@ -61,10 +63,23 @@ h1, h2, h3, h4, h5, h6 {
 p, span, button, a {
   font-family: "Inter", sans-serif;
 }
+section > div {
+  padding: var(--space-5) var(--space-1) var(--space-1);
+}
+.web-cont > * {
+  width: 100%;
+  max-width: 1250px;
+  margin-inline: auto;
+}
+.mobile-hidden {
+  display: none;
+}
 img {
   max-width: 100%;
 }
-
+ .hero-img {
+  display: none;
+ }
 .italic-accent {
   font-family: inherit;
   font-style: italic;
