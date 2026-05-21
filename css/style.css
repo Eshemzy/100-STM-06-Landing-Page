@@ -64,7 +64,7 @@ p, span, button, a {
   font-family: "Inter", sans-serif;
 }
 section > div {
-  padding: var(--space-5) var(--space-1) var(--space-1);
+  padding: var(--space-6) var(--space-2) var(--space-2);
 }
 .web-cont > * {
   width: 100%;
@@ -76,6 +76,7 @@ section > div {
 }
 img {
   max-width: 100%;
+  height: auto;
 }
  .hero-img {
   display: none;
@@ -83,4 +84,36 @@ img {
 .italic-accent {
   font-family: inherit;
   font-style: italic;
+}
+
+a.logo {
+  text-decoration: none;
+  color: var(--pry-txt-clr);
+  font-weight: 600;
+  font-family: "Fraunces", serif;
+  font-size: var(--fs-3);
+}
+.hamburger {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-1);
+}
+.hamburger .bar {
+  width: 2.5rem;
+  height: 4px;
+  background-color: var(--pry-clr);
+  border-radius: 50px;
+}
+.intro-tag {
+  background-color: #3b2a1e28;
+  padding: var(--space-1) var(--space-2);
+  display: inline;
+  border-radius: var(--fs-1);
+}
+.icon span i {
+  color: var(--tet-clr);
+}
+span.text {
+  font-size: var(--fs-1);
 }
