@@ -80,6 +80,12 @@ footer {
   max-width: 1250px;
   margin-inline: auto;
 }
+.web-cont h2 {
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.4;
+}
 .mobile-hidden {
   display: none;
 }
@@ -216,4 +222,48 @@ a.logo {
   font-size: 18px;
   color: var(--tet-txt-clr);
   font-weight: 500;
+}
+
+.features {
+  background-color: #f5efe4;
+}
+.features-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.features-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.features-intro p {
+  text-align: center;
+  font-size: 18px;
+}
+.features-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.features-wrapper .card {
+  background-color: var(--sec-clr);
+  padding: 32px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.features-wrapper .card .icon i {
+  font-size: 28px;
+  background-color: #f4c04e33;
+  padding: 14px;
+  border-radius: 10px;
+}
+.features-wrapper .card .text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
