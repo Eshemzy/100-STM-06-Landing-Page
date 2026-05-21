@@ -64,7 +64,7 @@ p, span, button, a {
   font-family: "Inter", sans-serif;
 }
 section > div {
-  padding: var(--space-6) var(--space-2) var(--space-2);
+  padding: var(--space-6) var(--space-3) var(--space-2);
 }
 .web-cont > * {
   width: 100%;
@@ -86,6 +86,17 @@ img {
   font-style: italic;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  background-color: var(--sec-clr);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+}
 a.logo {
   text-decoration: none;
   color: var(--pry-txt-clr);
@@ -106,14 +117,71 @@ a.logo {
   border-radius: 50px;
 }
 .intro-tag {
-  background-color: #3b2a1e28;
-  padding: var(--space-1) var(--space-2);
-  display: inline;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #f5efe4;
   border-radius: var(--fs-1);
+  padding: 6px 12px;
 }
-.icon span i {
-  color: var(--tet-clr);
+.intro-tag span.icon {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--tet-clr);
 }
-span.text {
-  font-size: var(--fs-1);
+.intro-tag span.text {
+  font-size: 14px;
+}
+.headline {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 0 32px;
+}
+.headline h1 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.headline p {
+  font-size: 18px;
+}
+.hero-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+.hero-cta a.order,
+.hero-cta a.chat {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  padding: 16px 32px;
+  border-radius: 32px;
+}
+.order--mod {
+  background-color: var(--pry-clr);
+  color: var(--sec-clr);
+}
+.chat--mod {
+  background-color: #f5efe4;
+  color: var(--pry-clr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.chat--mod i {
+  font-size: 18px;
+  font-weight: 500;
+}
+.chat--mod span {
+  font-size: 16px;
+  font-weight: 500;
 }
