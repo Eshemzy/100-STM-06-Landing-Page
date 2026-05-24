@@ -275,6 +275,7 @@ a.logo {
   display: flex;
   flex-direction: column;
   gap: 64px;
+  padding-bottom: 96px;
 }
 .catalog-inner .catalog-intro {
   display: flex;
@@ -331,4 +332,27 @@ a.logo {
 .catalog-wrapper .cata-item .text p {
   font-size: 16px;
   color: var(--sec-txt-clr-fade);
+}
+
+.achievements-inner {
+  background-color: var(--tet-clr);
+  padding: 64px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.achievements-inner .achie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.achievements-inner .achie .value {
+  font-size: 36px;
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+}
+.achievements-inner .achie .description {
+  font-size: 14px;
 }
