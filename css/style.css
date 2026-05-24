@@ -73,7 +73,7 @@ p, span, button, a {
 .inquiry,
 .faqs,
 footer {
-  padding: var(--space-6) var(--space-3) var(--space-2);
+  padding: 96px var(--space-3) var(--space-2);
 }
 .web-cont > * {
   width: 100%;
@@ -171,18 +171,19 @@ a.logo {
   gap: 12px;
 }
 .hero-cta a.order,
-.hero-cta a.chat {
+.hero-cta a.chat,
+.cata-cta a { /*ANCHOR TAG TO VIEW FULL CATALOG*/
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
   width: 100%;
-  text-align: center;
-  padding: 16px 32px;
   border-radius: 32px;
 }
 .order--mod {
   background-color: var(--pry-clr);
   color: var(--sec-clr);
+  text-align: center;
+  padding: 16px 32px;
 }
 .chat--mod {
   background-color: #f5efe4;
@@ -191,6 +192,8 @@ a.logo {
   align-items: center;
   justify-content: center;
   gap: 5px;
+  text-align: center;
+  padding: 16px 32px;
 }
 .chat--mod i {
   font-size: 18px;
@@ -243,7 +246,7 @@ a.logo {
 }
 .features-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 24px;
   padding-top: 96px;
   padding-bottom: 96px;
@@ -266,4 +269,66 @@ a.logo {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.catalog-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.catalog-inner .catalog-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.catalog-inner .catalog-intro h2 {
+  line-height: 1.2;
+  text-align: left;
+}
+.catalog-inner .catalog-intro .cata-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.catalog-inner .catalog-intro .cata-cta p {
+  font-size: 18px;
+}
+.catalog-inner .catalog-intro .cata-cta a { /* MOD HERE -> 'cata-cta a' */
+  background-color: var(--pry-clr);
+  color: var(--sec-clr);
+  padding: 12px 24px;
+}
+.catalog-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  gap: 32px;
+}
+.catalog-wrapper .cata-item {
+  display: grid;
+  place-items: end;
+}
+.catalog-wrapper .cata-item img {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  border-radius: 16px;
+  filter: brightness(45%);
+  z-index: 0;
+}
+.catalog-wrapper .cata-item .text {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  padding: 32px;
+  color: var(--sec-txt-clr);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.catalog-wrapper .cata-item .text h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.catalog-wrapper .cata-item .text p {
+  font-size: 16px;
+  color: var(--sec-txt-clr-fade);
 }
