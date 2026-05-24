@@ -356,3 +356,49 @@ a.logo {
 .achievements-inner .achie .description {
   font-size: 14px;
 }
+
+.testimonials {
+  background-color: #f5efe4;
+}
+.testimonials-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding-bottom: 96px;
+}
+.testimonials-inner .testi-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.testimonials-inner .testimonials-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  gap: 16px;
+}
+.testimonials-inner .testimonials-wrapper .testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--sec-clr);
+  padding: 32px;
+  border-radius: 16px;
+}
+.testimonials-inner .testimonials-wrapper .testimonial .star-wrapper {
+  color: var(--tet-clr);
+}
+.testimonials-inner .testimonials-wrapper .testimonial p {
+  font-style: italic;
+}
+.testimonials-inner .testimonials-wrapper .testimonial .info-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.testimonials-inner .testimonials-wrapper .testimonial .info-wrapper .name {
+  font-size: 16px;
+  font-weight: 600;
+}
+.testimonials-inner .testimonials-wrapper .testimonial .info-wrapper .occupation {
+  font-size: 14px;
+  color: #4a3526b3;
+}
