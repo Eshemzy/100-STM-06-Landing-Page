@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
     "SOFT" 0,
     "WONK" 0;
 }
-p, span, button, a {
+p, span, button, a, label {
   font-family: "Inter", sans-serif;
 }
 .hero,
@@ -520,4 +520,53 @@ a.logo {
   border-radius: 32px;
   box-shadow: 0 0 3px #dbdbdb;
   font-size: 18px;
+}
+.inquiry {
+  padding-bottom: 96px;
+}
+.inquiry-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.inquiry-inner .inquiry-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.inquiry-inner .inquiry-intro p {
+  text-align: center;
+}
+.inquiry-inner .form-cont form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 16px;
+}
+.inquiry-inner .form-cont form .row {
+  display: grid;
+  gap: 8px;
+}
+.inquiry-inner .form-cont form .row label {
+  font-size: 14px;
+  font-weight: 500;
+}
+.inquiry-inner .form-cont form .row [name] {
+  width: 100%;
+  padding: 12px 16px;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  background-color: #f5efe4;
+}
+.inquiry-inner .form-cont form input[type="submit"] {
+  padding: 16px 0;
+  border-radius: 16px;
+  border: none;
+  background-color: var(--pry-clr);
+  color: var(--sec-txt-clr);
+  font-size: 16px;
+  font-weight: 500;
 }
