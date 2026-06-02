@@ -592,6 +592,7 @@ a.logo {
   flex-direction: row;
   padding: 20px 24px;
   border: none;
+  background: transparent;
 }
 .faqs-inner .accordion-cont .accordion button .text {
   font-size: 18px;
