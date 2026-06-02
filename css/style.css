@@ -574,12 +574,54 @@ a.logo {
   padding-bottom: 96px;
 }
 .faqs-inner,
-.faqs-inner .accordion-two {
+.faqs-inner .accordion-cont {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-.faqs-inner .accordion-two details {
+.faqs-inner .accordion-cont .accordion {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--sec-clr);
+  border-radius: 16px;
+}
+.faqs-inner .accordion-cont .accordion button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px 24px;
+  border: none;
+}
+.faqs-inner .accordion-cont .accordion button .text {
+  font-size: 18px;
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+}
+.faqs-inner .accordion-cont .accordion .icon i {
+  font-size: 18px;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+.faqs-inner .accordion-cont .accordion.active .icon i {
+  transform: rotate(180deg);
+}
+.faqs-inner .accordion-cont .accordion .panel {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.4s ease,
+    opacity 0.3s ease;
+}
+.faqs-inner .accordion-cont .accordion.active .panel {
+  opacity: 1;
+}
+.faqs-inner .accordion-cont .accordion .panel p {
+  font-size: 16px;
+  padding: 0 24px 20px;
+}
+/* .faqs-inner .accordion-two details {
   cursor: pointer;
   transition: all 0.3s ease;
   height: auto;
@@ -620,4 +662,4 @@ summary::marker {
 }
 .faqs-inner .accordion-two details[open] summary::after {
   content: "−";
-}
+} */

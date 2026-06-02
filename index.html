@@ -480,34 +480,79 @@
           <div class="faqs-inner">
             <h2>Frequently Asked Questions</h2>
 
-            <!-- <div class="accordion-cont">
-              <button type="button" class="accordion">Do you deliver?</button>
-              <div class="panel">
-                <p>Yes. Delivery availability depends on your location and order size. We have dedicated routes for both retail and wholesale customers.</p>
+            <div class="accordion-cont">
+              <div class="accordion">
+                <button type="button" class="accordion-btn">
+                  <span class="text">Do you deliver?</span>
+
+                  <span class="icon">
+                    <i class="ph ph-caret-up"></i>
+                  </span>
+                </button>
+
+                <div class="panel">
+                  <p>Yes. Delivery availability depends on your location and order size. We have dedicated routes for both retail and wholesale customers.</p>
+                </div>
+              </div>
+              
+              <div class="accordion">
+                <button type="button" class="accordion-btn">
+                  <span class="text">Can I order in bulk?</span>
+
+                  <span class="icon">
+                    <i class="ph ph-caret-up"></i>
+                  </span>
+                </button>
+
+                <div class="panel">
+                  <p>Absolutely. We supply homes, resellers, bakeries, restaurants, hotels, and other businesses with scalable bulk options.</p>
+                </div>
               </div>
 
-              <button type="button" class="accordion">Can I order in bulk?</button>
-              <div class="panel">
-                <p>Absolutely. We supply homes, resellers, bakeries, restaurants, hotels, and other businesses with scalable bulk options.</p>
+              <div class="accordion">
+                <button type="button" class="accordion-btn">
+                  <span class="text">How fresh are the eggs?</span>
+
+                  <span class="icon">
+                    <i class="ph ph-caret-up"></i>
+                  </span>
+                </button>
+
+                <div class="panel">
+                  <p>We prioritize fresh sourcing and proper handling. Our supply chain is optimized to ensure eggs reach you as quickly as possible from the farm.</p>
+                </div>
               </div>
 
-              <button type="button" class="accordion">How fresh are the eggs?</button>
-              <div class="panel">
-                <p>We prioritize fresh sourcing and proper handling. Our supply chain is optimized to ensure eggs reach you as quickly as possible from the farm.</p>
+              <div class="accordion">
+                <button type="button" class="accordion-btn">
+                  <span class="text">Do you offer recurring supply?</span>
+
+                  <span class="icon">
+                    <i class="ph ph-caret-up"></i>
+                  </span>
+                </button>
+
+                <div class="panel">
+                  <p>Yes. Recurring delivery arrangements can be structured for businesses and regular buyers to ensure you never run out of stock.</p>
+                </div>
               </div>
 
-              <button type="button" class="accordion">Do you offer recurring supply?</button>
-              <div class="panel">
-                <p>Yes. Recurring delivery arrangements can be structured for businesses and regular buyers to ensure you never run out of stock.</p>
-              </div>
+              <div class="accordion">
+                <button type="button" class="accordion-btn">
+                  <span class="text">What areas do you supply?</span>
 
-              <button type="button" class="accordion">What areas do you supply?</button>
-              <div class="panel">
-                <p>You can contact us directly via WhatsApp or our inquiry form to confirm delivery coverage for your specific location.</p>
-              </div>
-            </div> -->
+                  <span class="icon">
+                    <i class="ph ph-caret-up"></i>
+                  </span>
+                </button>
 
-            <div class="accordion-two">
+                <div class="panel">
+                  <p>You can contact us directly via WhatsApp or our inquiry form to confirm delivery coverage for your specific location.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="accordion-two">
              <details name="faq">
                 <summary>Do you deliver?</summary>
                 <p>Yes. Delivery availability depends on your location and order size. We have dedicated routes for both retail and wholesale customers.</p>
@@ -532,7 +577,7 @@
                 <summary>What areas do you supply?</summary>
                 <p>You can contact us directly via WhatsApp or our inquiry form to confirm delivery coverage for your specific location.</p>
               </details>
-            </div>
+            </div> -->
           </div>
         </section>
 
@@ -656,5 +701,32 @@
       </div>
     </footer>
   </div>
+  <script>
+    const accordions = document.querySelectorAll(".accordion");
+
+    accordions.forEach((accordion) => {
+      const button = accordion.querySelector(".accordion-btn");
+      const panel = accordion.querySelector(".panel");
+
+      button.addEventListener("click", () => {
+
+        const isActive = accordion.classList.contains("active");
+
+        // Close all accordions
+      accordions.forEach((item) => {
+        item.classList.remove("active");
+
+        const itemPanel = item.querySelector(".panel");
+        itemPanel.style.maxHeight = null;
+      });
+
+        // Open clicked accordion if it wasn't already open
+      if (!isActive) {
+        accordion.classList.add("active");
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  });
+  </script>
 </body>
 </html>
