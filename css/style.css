@@ -93,9 +93,6 @@ img {
   max-width: 100%;
   height: auto;
 }
- .hero-img {
-  display: none;
- }
 .italic-accent {
   font-family: inherit;
   font-style: italic;
@@ -569,4 +566,58 @@ a.logo {
   color: var(--sec-txt-clr);
   font-size: 16px;
   font-weight: 500;
+}
+
+
+.faqs {
+  background-color: #f5efe4;
+  padding-bottom: 96px;
+}
+.faqs-inner,
+.faqs-inner .accordion-two {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.faqs-inner .accordion-two details {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: auto;
+}
+.faqs-inner .accordion-two details summary {
+  font-size: 18px;
+  font-family: "Fraunces", serif;
+  list-style: none;
+  border-radius: 16px;
+  background-color: var(--sec-clr);
+  border: 1px solid #e7e7e7;
+  padding: 16px;
+}
+.faqs-inner .accordion-two details[open] summary {
+  border-radius: 16px 16px 0 0;
+}
+.faqs-inner .accordion-two details[open] p {
+  background-color: #f0e2cc;
+  border-radius: 0 0 8px 8px;
+  font-size: 16px;
+  font-family: "Inter", serif;
+  color: #4a3526;
+  padding: 10px 20px;
+}
+
+
+summary::marker {
+  content: "";
+}
+.faqs-inner .accordion-two details summary::-webkit-details-marker {
+  display: none;
+}
+.faqs-inner .accordion-two details summary::after {
+  content: "+";
+  float: right;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+.faqs-inner .accordion-two details[open] summary::after {
+  content: "−";
 }
