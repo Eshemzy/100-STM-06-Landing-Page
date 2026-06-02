@@ -569,7 +569,7 @@ a.logo {
 }
 
 
-.faqs {
+/* .faqs {
   background-color: #f5efe4;
   padding-bottom: 96px;
 }
@@ -621,8 +621,21 @@ a.logo {
 .faqs-inner .accordion-cont .accordion .panel p {
   font-size: 16px;
   padding: 0 24px 20px;
+} */
+
+
+
+.faqs {
+  background-color: #f5efe4;
+  padding-bottom: 96px;
 }
-/* .faqs-inner .accordion-two details {
+.faqs-inner,
+.faqs-inner .accordion-two {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.faqs-inner .accordion-two details {
   cursor: pointer;
   transition: all 0.3s ease;
   height: auto;
@@ -663,4 +676,4 @@ summary::marker {
 }
 .faqs-inner .accordion-two details[open] summary::after {
   content: "−";
-} */
+}
