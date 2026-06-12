@@ -9,7 +9,7 @@
 :root {
   --pry-clr: #3b2a1e;
   --sec-clr: #faf6ef;
-  --tet-clr: #e5a628;
+  --tet-clr: #f4c04e;
 
   --pry-txt-clr: #4a3526;
   --pry-txt-dark-fade: #4a3526cc;
@@ -676,4 +676,57 @@ summary::marker {
 }
 .faqs-inner .accordion-two details[open] summary::after {
   content: "−";
+}
+
+section.cta {
+  background-color: #f4c04e;
+  padding: 96px 0;
+}
+.cta-inner {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.cta-inner h2 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+.cta-inner p {
+  font-size: 20px;
+}
+.cta-inner .cta-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.cta-inner .cta-wrapper a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px 32px;
+  border-radius: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cta-inner .cta-wrapper a span i {
+  font-size: 16px;
+  font-weight: 600;
+}
+.cta-inner .cta-wrapper a.order-cta {
+  gap: 8px;
+  color: var(--sec-txt-clr);
+  background-color: var(--pry-clr);
+}
+.cta-inner .cta-wrapper a.chat-cta {
+  gap: 8px;
+  background-color: var(--sec-clr);
+  color: var(--pry-txt-clr);
+}
+.cta-inner .cta-wrapper a.partner-cta {
+  text-align: center;
+  border: 2px solid var(--pry-clr);
+  background-color: transparent;
+  color: var(--pry-txt-clr);
 }
