@@ -130,7 +130,7 @@ a.logo {
 }
 
 .hero {
-  padding: 96px 0;
+  padding: 96px 24px;
 }
 .intro-tag {
   display: inline-flex;
@@ -742,10 +742,126 @@ footer {
   padding: 60px 0 40px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
 }
 .footer-inner .top-band {
-  display: grid;
-  grid-auto-rows: auto;
-  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.footer-inner .top-band .brand {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: var(--sec-txt-clr);
+}
+.footer-inner .top-band .brand a.logo--footer {
+  color: var(--clr);
+  font-size: 20px;
+  font-family: "Fraunces", serif;
+}
+.footer-inner .top-band .socials-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.footer-inner .top-band .socials-wrapper a {
+  text-decoration: none;
+  padding: 12px;
+  background-color: #faf6ef1a;
+  border-radius: 50%;
+}
+.footer-inner .top-band .socials-wrapper a i {
+  font-size: 18px;
+  color: var(--clr);
+  display: flex;
+  justify-content: center;
+  color: var(--sec-txt-clr);
+}
+
+.footer-inner .top-band .quick-links,
+.footer-inner .top-band .contact,
+.footer-inner .top-band .address {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-inner .top-band .quick-links h3,
+.footer-inner .top-band .contact h3,
+.footer-inner .top-band .address h3 {
+  color: var(--sec-txt-clr);
+  font-weight: 700;
+}
+.footer-inner .top-band .quick-links .footer-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+.footer-inner .top-band .quick-links .footer-nav ul li a {
+  display: inline-block;
+  color: var(--sec-txt-clr);
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-inner .top-band .contact .contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-inner .top-band .contact .contact-wrapper div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.footer-inner .top-band .contact .contact-wrapper div span:not(.whatsapp a span) {
+  color: #faf6efb3;
+  font-size: 12px;
+  font-family: "Inter", serif;
+}
+.footer-inner .top-band .contact .contact-wrapper div a {
+  text-decoration: none;
+  color: #faf6efb3;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer-inner .top-band .contact .contact-wrapper .whatsapp a i {
+  font-size: 14px;
+}
+
+.footer-inner .top-band .address .address-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.footer-inner .top-band .address .address-wrapper div .intro {
+  color: #faf6efb3;
+  font-size: 12px;
+}
+.footer-inner .top-band .address .address-wrapper div p {
+  font-size: 16px;
+  color: #faf6efb3;
+  font-weight: 500;
+}
+
+
+.footer-inner .bottom-band {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+.footer-inner .bottom-band .copyright {
+  font-size: 14px;
+  color: #faf6ef80;
+}
+.footer-inner .bottom-band .caption {
+  font-size: 14px;
 }
