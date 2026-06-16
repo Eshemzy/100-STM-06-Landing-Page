@@ -120,11 +120,11 @@ a.logo {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
-  gap: var(--space-1);
+  gap: 5px;
 }
 .hamburger .bar {
-  width: 2.5rem;
-  height: 4px;
+  width: 1.5rem;
+  height: 2px;
   background-color: var(--pry-clr);
   border-radius: 50px;
 }
