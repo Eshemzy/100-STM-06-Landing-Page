@@ -73,7 +73,7 @@ p, span, button, a, label {
 .inquiry,
 .faqs,
 footer {
-  padding: 96px var(--space-3) var(--space-2);
+  padding: clamp(3rem, -1.2rem + 24vw, 6rem) clamp(0.8rem, -0.18rem + 5.6vw, 1.5rem) clamp(0.7rem, 0.28rem + 2.4vw, 1rem);
 }
 .web-cont > * {
   width: 100%;
@@ -81,10 +81,10 @@ footer {
   margin-inline: auto;
 }
 .web-cont h2 {
-  font-size: 36px;
+  font-size: clamp(2rem, 1.65rem + 2vw, 2.25rem);
   font-weight: 400;
   text-align: center;
-  line-height: 1.4;
+  line-height: clamp(1.2, calc(1.2 + (1.4 - 1.2) * ((100vw - 280px) / (480 - 280))), 1.4);;
 }
 .mobile-hidden {
   display: none;
@@ -102,52 +102,55 @@ header {
   position: sticky;
   top: 0;
   background-color: var(--sec-clr);
+  box-shadow: -2px 0 3px var(--pry-clr);
+  /* border-radius: 0 0 0.313rem 0.313rem; */
+  z-index: 999;
 }
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 24px;
+  padding: clamp(0.5rem, 0.15rem + 2vw, 0.75rem) clamp(1rem, 0.3rem + 4vw, 1.5rem);
 }
 a.logo {
   text-decoration: none;
   color: var(--pry-txt-clr);
   font-weight: 600;
   font-family: "Fraunces", serif;
-  font-size: var(--fs-3);
+  font-size: clamp(0.875rem, 0.35rem + 3vw, 1.25rem);
 }
 .hamburger {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
+  gap: clamp(0.188rem, 0.013rem + 1vw, 0.313rem);
 }
 .hamburger .bar {
-  width: 1.5rem;
+  width: clamp(1.3rem, 0.74rem + 3.2vw, 1.7rem);
   height: 2px;
   background-color: var(--pry-clr);
-  border-radius: 50px;
+  border-radius: 3.125rem;
 }
 
 .hero {
-  padding: 96px 24px;
+  padding: clamp(5rem, 3.6rem + 8vw, 6rem) clamp(1rem, 0.3rem + 4vw, 1.5rem);
 }
 .intro-tag {
   display: inline-flex;
   align-items: center;
   gap: 5px;
   background-color: #f5efe4;
-  border-radius: var(--fs-1);
-  padding: 6px 12px;
+  border-radius: 1.875rem;
+  padding: clamp(0.188rem, -0.075rem + 1.5vw, 0.375rem) clamp(0.375rem, -0.15rem + 3vw, 0.75rem);
 }
 .intro-tag span.icon {
-  width: 6px;
-  height: 6px;
+  width: clamp(0.25rem, 0.075rem + 1vw, 0.375rem);
+  height: clamp(0.25rem, 0.075rem + 1vw, 0.375rem);
   border-radius: 50%;
   background-color: var(--tet-clr);
 }
 .intro-tag span.text {
-  font-size: 14px;
+  font-size: clamp(0.75rem, 0.575rem + 1vw, 0.875rem);
 }
 .headline {
   display: flex;
@@ -869,3 +872,4 @@ footer {
   font-style: italic;
   font-weight: 500;
 }
+
